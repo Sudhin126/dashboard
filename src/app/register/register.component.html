@@ -1,0 +1,64 @@
+
+
+<div class="container">
+    <div class="row">
+    
+     
+        <div class="col-3"></div>
+    
+    <div class="col-md-6 ">
+        
+    
+        <h2>Welcome To Register Page</h2>
+        <form [formGroup]="form">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Username</label>
+              <input type="text" class="form-control" formControlName="username" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your username with anyone else.</div>
+              <span *ngIf="form.get('username')?.invalid && form.get('username')?.touched" for="productname"
+              class="text-danger">Username is required</span>
+             
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" formControlName="password" id="exampleInputPassword1">
+              <span *ngIf="form.get('password')?.invalid && form.get('password')?.touched" for="productname"
+              class="text-danger">Password is required</span>
+             
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" formControlName="conpassword" id="exampleInputPassword1">
+                <span *ngIf="form.get('conpassword')?.invalid && form.get('conpassword')?.touched" for="productname"
+                class="text-danger">Confirm Password is required</span>
+               
+              </div>
+            <div class="mb-3 form-check">
+             
+              <label>
+                 
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary" [routerLink]="['/login']" >Submit</button>
+          </form>
+    
+    
+    
+    </div>
+    <div class="col-3"></div>
+    
+    
+    
+    </div>
+    
+    
+    
+    
+    </div>
+
+
+    
+    
+    
+    
+    
